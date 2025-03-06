@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>jQuery Bananza</h1>
+      <div class="header-container">
+        <nav>
+          <img
+            src="./images/arrow-left.svg"
+            alt="arrow left icon"
+            width="50px"
+          />
+          <img
+            src="./images/arrow-right.svg"
+            alt="arrow right icon"
+            width="50px"
+          />
+          <img src="./images/x-mark.svg" alt="x mark icon" />
+          <img src="./images/home.svg" alt="home icon" />
+        </nav>
+
+        <input type="text" />
+
+        <button class="header-btn btn">
+          <img src="./images/search.svg" alt="search icon" />
+        </button>
+      </div>
+    </header>
+    <main>
+      <div id="fade-test" class="test">
+        <button id="fadeOut-btn" class="test-btn btn">Fade Out</button>
+        <button id="fadeIn-btn" class="test-btn btn hidden">Fade In</button>
+        <p class="text-1">When the button is clicked this text fades out.</p>
+      </div>
+      <div id="append-test" class="test">
+        <button id="append-btn" class="test-btn btn">Append</button>
+        <p class="text-2">When the button is clicked append some text here.</p>
+      </div>
+      <div class="test">
+        <button id="changeColor-btn" class="test-btn btn">Change Color</button>
+        <p class="text-3">
+          When the button is clicked change the text color to red.
+        </p>
+      </div>
+    </main>
+  </body>
+</html>
