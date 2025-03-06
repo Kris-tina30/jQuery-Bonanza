@@ -1,29 +1,17 @@
-// .click
-// .fadein
-// .fadeOut
-// .addClass
-// .append
-// .html
-// .text
-// .val
-// .hide
-// .show
-// .slideDown
-
-$("document").ready(() => {
-  $("#fadeOut-btn").click(() => {
+$(document).ready(() => {
+  $("#fadeOut-btn").click(function () {
     $(".text-1, #fadeOut-btn").fadeOut(1000);
     $("#fadeIn-btn").fadeIn(500);
   });
 
-  $("#fadeIn-btn").click(() => {
+  $("#fadeIn-btn").click(function () {
     $(".text-1, #fadeOut-btn").fadeIn(1000);
     $("#fadeIn-btn").fadeOut(500);
   });
-  $("#append-btn").click(() => {
+  $("#append-btn").click(function () {
     $("#append-test").append("<p>Hallo!</p>");
   });
-  $("#changeColor-btn").click(() => {
+  $("#changeColor-btn").click(function () {
     $(".text-3").css("color", "red");
   });
 });
